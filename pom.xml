@@ -357,6 +357,8 @@
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>3.4.0</version>
 				<configuration>
+					<!-- To skip building docker image -->
+					<skip>true</skip>
 					<container>
 						<labels>
 							<author>SNOMED International &lt;tooling@snomed.org&gt;</author>
@@ -520,6 +522,8 @@
 						<artifactId>jib-maven-plugin</artifactId>
 						<version>3.3.1</version>
 						<configuration>
+							<!-- To skip building docker image -->
+							<skip>true</skip>
 							<!-- Override the architecture to linux/amd64 -->
 							<from>
 								<image>${docker.base-image}</image>
@@ -544,6 +548,8 @@
 						<artifactId>jib-maven-plugin</artifactId>
 						<version>3.3.1</version>
 						<configuration>
+							<!-- To skip building docker image -->
+							<skip>true</skip>
 							<from>
 								<image>${docker.base-image}</image>
 								<platforms>
